@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
-This is a simple module and it only has
-one function called add
+This is a simple module and it only has one function called add
 """
 
 def add(a: float, b: float) -> float :
