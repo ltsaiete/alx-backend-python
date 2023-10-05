@@ -3,10 +3,9 @@
 This is a simple module and it only has
 one function called floor
 """
-import math
 
 
-def floor(n: float) -> float:
+def floor(n: float) -> int:
     """ takes a float n as argument and returns the floor of the float.
 
     Args:
@@ -15,4 +14,4 @@ def floor(n: float) -> float:
         float: _description_
     """
 
-    return math.floor(n)
+    return int(n)
