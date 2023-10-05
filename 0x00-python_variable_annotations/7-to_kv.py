@@ -3,10 +3,9 @@
 This is a simple module and it only has
 one function called to_kv
 """
-from typing import Tuple
 
 
-def to_kv(k: str, v: int | float) -> Tuple[str, float]:
+def to_kv(k: str, v: int | float) -> tuple[str, float]:
     """takes a string k and an int OR float v as arguments and returns a tuple.
 
     Args:

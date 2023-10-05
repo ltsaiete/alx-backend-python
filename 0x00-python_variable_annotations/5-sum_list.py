@@ -3,10 +3,9 @@
 This is a simple module and it only has
 one function called sum_mixed_list
 """
-from typing import List
 
 
-def sum_mixed_list (mxd_lst : List[int | float] ) -> float:
+def sum_mixed_list (mxd_lst : list[int | float] ) -> float:
     """takes a list mxd_lst  of floats as argument and
     returns their sum as a float.
 
