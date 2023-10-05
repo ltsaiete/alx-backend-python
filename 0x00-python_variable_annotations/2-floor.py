@@ -11,7 +11,6 @@ def floor(n: float) -> float:
 
     Args:
         n (float): _description_
-
     Returns:
         float: _description_
     """
