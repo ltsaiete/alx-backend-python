@@ -8,11 +8,11 @@ from typing import Coroutine
 import random
 
 
-async def wait_random(max_delay: float) -> Coroutine[None, None, float]:
+async def wait_random(max_delay: int) -> float:
     """ waits for a random delay between 0 and max_delay
 
     Args:
-        max_delay (float): the max delay
+        max_delay (int): the max delay
 
     Returns:
         float: the delay
