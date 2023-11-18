@@ -3,12 +3,12 @@
 This is a simple module and it only has
 one function called fun_name
 """
-
-import time
+import asyncio
+from typing import Coroutine
 import random
 
 
-async def wait_random(max_delay: float) -> float:
+async def wait_random(max_delay: float) -> Coroutine[None, None, float]:
     """ waits for a random delay between 0 and max_delay
 
     Args:
@@ -18,5 +18,5 @@ async def wait_random(max_delay: float) -> float:
         float: the delay
     """
     delay: float = random.random() * max_delay
-    time.sleep(delay)
+    await asyncio.sleep(delay)
     return delay
