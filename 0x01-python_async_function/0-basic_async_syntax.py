@@ -17,6 +17,6 @@ async def wait_random(max_delay: float) -> float:
     Returns:
         float: the delay
     """
-    delay = random.random() * max_delay
+    delay: float = random.random() * max_delay
     time.sleep(delay)
     return delay
