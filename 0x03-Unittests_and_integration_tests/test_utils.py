@@ -26,8 +26,12 @@ class TestAccessNestedMap(unittest.TestCase):
         ({"a": {"b": 2}}, ("a",), {"b": 2}),
         ({"a": {"b": 2}}, ("a", "b"), 2),
     ])
-    def test_access_nested_map(self, nested_map: Mapping, path: Sequence, expected_result: Union[Mapping, int]):
-        """test that the method utils.access_nested_map returns what it is supposed to.
+    def test_access_nested_map(self,
+                               nested_map: Mapping,
+                               path: Sequence,
+                               expected_result: Union[Mapping, int]):
+        """test that the method utils.access_nested_map
+        returns what it is supposed to.
 
         Args:
             nested_map (Mapping):  A nested map
@@ -42,7 +46,10 @@ class TestAccessNestedMap(unittest.TestCase):
         ({}, ("a"), 'a'),
         ({"a": 1}, ("a", "b"), 'b')
     ])
-    def test_access_nested_map_exception(self, nested_map: Mapping, path: Sequence, message: str):
+    def test_access_nested_map_exception(self,
+                                         nested_map: Mapping,
+                                         path: Sequence,
+                                         message: str):
         with self.assertRaises(KeyError, msg=message):
             access_nested_map(nested_map, path)
 
