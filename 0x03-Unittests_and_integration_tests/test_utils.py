@@ -50,6 +50,13 @@ class TestAccessNestedMap(unittest.TestCase):
                                          nested_map: Mapping,
                                          path: Sequence,
                                          message: str):
+        """_summary_
+
+        Args:
+            nested_map (Mapping): _description_
+            path (Sequence): _description_
+            message (str): _description_
+        """
         with self.assertRaises(KeyError, msg=message):
             access_nested_map(nested_map, path)
 
